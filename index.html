@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romaan's resume</title>
+  <meta
+    name="description"
+    content="Professional personal resume website for Romaan Adil, featuring skills, education, projects, and contact information."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8f5C0z4QnNQ0+0llia7TcaY8yM0zQKg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Go to homepage">
+        <span class="brand-mark">RA</span>
+        <span class="brand-text">Romaan Adil</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <!-- <a href="#certifications">Certifications</a> -->
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-backdrop"></div>
+
+        <div class="hero-content">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">personal portfolio</p>
+            <h1 class="hero-name glitch" data-text="Romaan Adil">Romaan Adil</h1>
+            <p class="hero-role">
+              <span class="type-prefix">Adil is </span>
+              <span class="typewriter" id="typewriter-role">Programmer</span><span class="type-cursor"></span>
+            </p>
+            
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View My Work</a>
+              <a class="btn btn-secondary" href="#contact">Hire Me</a>
+            </div>
+            <ul class="hero-metrics">
+              <li>
+                <strong>2023 - Present</strong>
+                <span>BCA Journey</span>
+              </li>
+              <li>
+                <strong>10+</strong>
+                <span>Skills & Tools</span>
+              </li>
+              <li>
+                <strong>2+</strong>
+                <span>Featured Projects</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="orbit-scene">
+              <span class="orbit orbit-one"></span>
+              <span class="orbit orbit-two"></span>
+              <span class="orbit orbit-three"></span>
+              <span class="orbit-dot orbit-dot-one"></span>
+              <span class="orbit-dot orbit-dot-two"></span>
+              <div class="photo-frame hero-avatar">
+                <img
+                  src="assets/romaan-photo.jpg"
+                  alt="Portrait of Romaan Adil"
+                  onerror="this.onerror=null;this.src='assets/profile-placeholder.svg';"
+                >
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-heading reveal">
+          <p class="section-label">About Me</p>
+          <h2>Curious, consistent, and serious about growth.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="about-photo-ring">
+              <img
+                src="assets/romaan-photo.jpg"
+                alt="Profile photo of Romaan Adil"
+                onerror="this.onerror=null;this.src='assets/profile-placeholder.svg';"
+              >
+            </div>
+          </div>
+
+          <div class="about-copy reveal">
+            <p>
+              I am a BCA student at Mahatma Jyotiba Phule Rohilkhand University, currently building a strong
+              foundation in programming and modern AI development. My academic journey is helping me combine
+              classroom learning with practical projects that sharpen both logic and design thinking.
+            </p>
+            <p>
+              Today, I enjoy working on AI Development,database,websites,etc.I strongly believe that
+              programming can solve real-world problems very smartly. 
+            </p>
+            <p>
+               I completed my schooling from the ICSE board, which shaped my discipline and communication skills.
+              My goal is to grow into a reliable software professional who can contribute to meaningful products,
+              keep learning quickly, and deliver work with clarity and consistency.
+            </p>
+
+            <div class="highlight-grid">
+              <article class="highlight-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h3>Location</h3>
+                  <p>Bareilly, Uttar Pradesh, India</p>
+                </div>
+              </article>
+              <article class="highlight-card">
+                <i class="fa-solid fa-building-columns"></i>
+                <div>
+                  <h3>University</h3>
+                  <p>MJPRU University</p>
+                </div>
+              </article>
+              <article class="highlight-card">
+                <i class="fa-solid fa-bullseye"></i>
+                <div>
+                  <h3>Goal</h3>
+                  <p>Become a skilled full-stack and AI-ready developer</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-heading reveal">
+          <p class="section-label">Skills</p>
+          <h2>What I Work With.</h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skill-panel reveal">
+            <h3>Programming</h3>
+            <div class="skill-bars">
+              <div class="skill-item" data-progress="90">
+                <div class="skill-header">
+                  <span>Python</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-track"><span></span></div>
+              </div>
+              <div class="skill-item" data-progress="80">
+                <div class="skill-header">
+                  <span>C</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress-track"><span></span></div>
+              </div>
+              <div class="skill-item" data-progress="74">
+                <div class="skill-header">
+                  <span>Java</span>
+                  <span>74%</span>
+                </div>
+                <div class="progress-track"><span></span></div>
+              </div>
+              <div class="skill-item" data-progress="85">
+                <div class="skill-header">
+                  <span>HTML, CSS, JavaScript</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress-track"><span></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-panel reveal">
+            <h3>Tools</h3>
+            <div class="badge-grid">
+              <span class="skill-badge"><i class="fa-solid fa-table"></i> Excel</span>
+              <span class="skill-badge"><i class="fa-solid fa-database"></i> Pandas</span>
+              <span class="skill-badge"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="skill-badge"><i class="fa-solid fa-laptop-code"></i> VS Code</span>
+              <span class="skill-badge"><i class="fa-solid fa-globe"></i> AI Models</span>
+              <span class="skill-badge"><i class="fa-solid fa-database"></i>PostgreSQL</span>
+              <span class="skill-badge"><i class="fa-solid fa-database"></i>SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-panel reveal">
+            <h3>Soft Skills</h3>
+            <div class="badge-grid">
+              <span class="skill-badge"><i class="fa-solid fa-comments"></i> Communication</span>
+              <span class="skill-badge"><i class="fa-solid fa-language"></i> English</span>
+              <span class="skill-badge"><i class="fa-solid fa-earth-asia"></i> Hindi</span>
+              <span class="skill-badge"><i class="fa-solid fa-people-group"></i> Teamwork</span>
+              <span class="skill-badge"><i class="fa-solid fa-brain"></i> Problem Solving</span>
+              <span class="skill-badge"><i class="fa-solid fa-hourglass-half"></i> Consistency</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education" id="education">
+        <div class="section-heading reveal">
+          <p class="section-label">Education</p>
+          <h2>Academic Roots.</h2>
+        </div>
+
+        <div class="timeline reveal">
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2023 - Current</span>
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <p>Mahatma Jyotiba Phule Rohilkhand University, Bareilly</p>
+              <p>Currently pursuing my degree with a growing focus on programming,AI,Python and project work.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">Schooling</span>
+              <h3>ICSE Board Background</h3>
+              <p>Completed schooling from De Paul School.</p>
+              <p>Built a disciplined foundation in academics, communication, and structured learning.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-heading reveal">
+          <p class="section-label">Projects</p>
+          <h2>Hands-On Projects.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-tag">Web Platform</span>
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <h3>Best School Finder</h3>
+            <p>
+              A website concept built to help users compare and discover the best schools based on relevant local
+              information and presentation clarity.
+            </p>
+            <ul class="project-meta">
+              <li>Tech: HTML, CSS, JavaScript</li>
+              <li>Focus: Search experience and clean UI</li>
+            </ul>
+            <a class="project-link" href="https://github.com/Romaan-Adil" target="_blank" rel="noreferrer">
+              View on GitHub
+            </a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-tag">assistant</span>
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <h3>jarvis assistant</h3>
+            <p>
+              A Python-based AI assistant designed to perform various tasks, answer questions, and provide pratical work.
+            </p>
+            <ul class="project-meta">
+              <li>Tech: python</li>
+              <li>Focus: AI assistant</li>
+            </ul>
+            <a class="project-link" href="https://github.com/Romaan-Adil" target="_blank" rel="noreferrer">
+              View on GitHub
+            </a>
+          </article>
+
+          <!-- <article class="project card reveal"> -->
+            <!-- <div class="project-topline">
+              <span class="project-tag">Portfolio Work</span>
+              <i class="fa-solid fa-laptop-file"></i>
+            </div>
+            <h3>Practice Builds Collection</h3>
+            <p>
+              A growing set of smaller web and programming experiments that help me improve layout skills, code
+              structure, and project confidence.
+            </p>
+            <ul class="project-meta">
+              <li>Tech: Python, Java, HTML, CSS, JS</li>
+              <li>Focus: Continuous learning and implementation</li>
+            </ul>
+            <a class="project-link" href="https://github.com/Romaan-Adil" target="_blank" rel="noreferrer">
+              View on GitHub
+            </a>
+          </article>
+        </div> -->
+      </section>
+
+      <!-- <section class="section certifications" id="certifications">
+        <div class="section-heading reveal">
+          <p class="section-label">Certifications</p>
+          <h2>Current learning milestones and focus areas.</h2>
+        </div>
+
+        <div class="certifications-wrap reveal">
+          <span class="cert-badge"><i class="fa-solid fa-book-open-reader"></i> Python Advance - In Progress</span>
+          <span class="cert-badge"><i class="fa-solid fa-code"></i> Web Development Essentials - In Progress</span>
+          <span class="cert-badge"><i class="fa-solid fa-chart-line"></i> Data Handling with Excel & Pandas - In Progress</span>
+        </div>
+      </section> -->
+
+      <section class="section contact" id="contact">
+        <div class="section-heading reveal">
+          <p class="section-label">Contact</p>
+          <h2>Let's Work Together.</h2>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-panel reveal">
+            <h3>Reach Me Directly</h3>
+            <div class="contact-list">
+              <a href="mailto:romaanadil50@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>romaanadil50@gmail.com</span>
+              </a>
+              <a href="tel:+919457575692">
+                <i class="fa-solid fa-phone"></i>
+                <span>Make a call</span>
+              </a>
+              <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn Profile</span>
+              </a>
+              <a href="https://github.com/Romaan-Adil" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Portfolio</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" action="mailto:romaanadil50@gmail.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <label for="name">Your Name</label>
+              <input id="name" name="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-row">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="How can I help?" required>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="current-year"></span> Romaan Adil. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
