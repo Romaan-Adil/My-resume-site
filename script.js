@@ -2,7 +2,6 @@ const header = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelectorAll(".site-nav a");
 const revealItems = document.querySelectorAll(".reveal");
-const skillItems = document.querySelectorAll(".skill-item");
 const yearTarget = document.getElementById("current-year");
 const canvas = document.getElementById("hero-canvas");
 const typewriterTarget = document.getElementById("typewriter-role");
@@ -25,13 +24,6 @@ if (menuToggle && header) {
   });
 }
 
-const setSkillProgress = (item) => {
-  const progress = item.querySelector(".progress-track span");
-  const value = item.dataset.progress;
-  if (progress && value) {
-    progress.style.width = `${value}%`;
-  }
-};
 
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
@@ -56,10 +48,8 @@ if ("IntersectionObserver" in window) {
   );
 
   revealItems.forEach((item) => revealObserver.observe(item));
-  skillItems.forEach((item) => revealObserver.observe(item));
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
-  skillItems.forEach(setSkillProgress);
 }
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
