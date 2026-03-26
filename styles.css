@@ -30,6 +30,8 @@ body {
     #030303;
   min-height: 100vh;
   overflow-x: hidden;
+   background-color: #030303;
+  background-attachment: fixed; 
 }
 
 body::before,
