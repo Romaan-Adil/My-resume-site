@@ -114,11 +114,14 @@ if (canvas && !prefersReducedMotion) {
   let particles = [];
   let animationFrameId;
 
-  const resizeCanvas = () => {
-    const { width, height } = canvas.getBoundingClientRect();
+   const resizeCanvas = () => {
+    const width = canvas.parentElement.offsetWidth;
+    const height = canvas.parentElement.offsetHeight;
     const scale = window.devicePixelRatio || 1;
     canvas.width = width * scale;
     canvas.height = height * scale;
+    canvas.style.width = width + "px";
+    canvas.style.height = height + "px";
     ctx.setTransform(scale, 0, 0, scale, 0, 0);
     buildParticles(width, height);
   };
